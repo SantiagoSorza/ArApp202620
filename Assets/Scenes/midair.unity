@@ -672,7 +672,7 @@ MonoBehaviour:
   m_Script: {fileID: 996249435, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.MidAirPositionerBehaviour
-  DistanceToCamera: 50
+  DistanceToCamera: 60
   MidAirIndicator: {fileID: 919132149155446097, guid: d539a7d34bf20924ab883f79bf7f3a1a,
     type: 3}
   OnAnchorPositionConfirmed:
@@ -745,17 +745,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 19aee0137eabf114a9b92dcd4c67acb4,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.09
+      value: 1.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 19aee0137eabf114a9b92dcd4c67acb4,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.09
+      value: 1.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 19aee0137eabf114a9b92dcd4c67acb4,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.09
+      value: 1.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 19aee0137eabf114a9b92dcd4c67acb4,
         type: 3}
@@ -775,7 +775,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 19aee0137eabf114a9b92dcd4c67acb4,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.00017452026
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 19aee0137eabf114a9b92dcd4c67acb4,
         type: 3}
@@ -785,12 +785,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 19aee0137eabf114a9b92dcd4c67acb4,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 19aee0137eabf114a9b92dcd4c67acb4,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 19aee0137eabf114a9b92dcd4c67acb4,
         type: 3}
@@ -800,7 +800,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 19aee0137eabf114a9b92dcd4c67acb4,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -180.02
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 19aee0137eabf114a9b92dcd4c67acb4,
         type: 3}
@@ -838,6 +838,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1040876649}
   - component: {fileID: 1040876648}
+  - component: {fileID: 1040876650}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -925,6 +926,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1040876650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040876647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1 &1144671865
 GameObject:
   m_ObjectHideFlags: 0
@@ -1692,8 +1722,8 @@ MonoBehaviour:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1040876649}
   - {fileID: 1144671871}
+  - {fileID: 1040876649}
   - {fileID: 705198710}
   - {fileID: 1687428516}
   - {fileID: 358967344}
